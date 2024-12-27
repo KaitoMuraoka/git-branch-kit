@@ -1,6 +1,6 @@
 {
-  "name": "git-branch-toolkit",
-  "description": "A toolkit to simplify git branch operations",
+  "name": "git-branch-kit",
+  "description": "A tools to simplify git branch operations",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
@@ -16,7 +16,7 @@
   ],
   "author": "KaitoMuraok",
   "license": "MIT",
-  "repository": "KaitoMuraok/git-branch-toolkit",
+  "repository": "KaitoMuraok/git-branch-kit",
   "publishConfig": {
     "access": "public"
   },

@@ -1,4 +1,4 @@
-# git-branch-toolkit
+# git-branch-kit
 
 A CLI tool to simplify Git branch operations
 Say goodbye to branch name typos 👋
@@ -6,7 +6,7 @@ Say goodbye to branch name typos 👋
 ## Installation
 
 ```sh
-npm i git-branch-toolkit
+npm i git-branch-kit
 ```
 
 ## Recommended Settings

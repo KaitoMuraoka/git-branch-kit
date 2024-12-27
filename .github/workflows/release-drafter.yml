@@ -1,4 +1,4 @@
-name: Create Release Note
+name: Create Release Note and Publish to npm
 
 on:
   workflow_dispatch:
@@ -21,6 +21,12 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      - name: Set Node.js Version
+        uses: actions/setup-node@v4
+        with:
+          node-version: 21
+          cache: npm
+
       - name: Update package.json version
         run: |
           node -e "let fs = require('fs'); let pkg = JSON.parse(fs.readFileSync('package.json', 'utf-8')); pkg.version = process.env.VERSION; fs.writeFileSync('package.json', JSON.stringify(pkg, null, 2));"
@@ -36,6 +42,13 @@ jobs:
           git push
         env:
           VERSION: ${{ github.event.inputs.version }}
+
+      - name: Publish to npm
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          npm install
+          npm publish --access public
 
       - name: Create Release Tag And Note
         env:
