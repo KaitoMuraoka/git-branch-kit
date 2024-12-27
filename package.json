@@ -1,0 +1,28 @@
+{
+  "name": "git-branch-toolkit",
+  "description": "A toolkit to simplify git branch operations",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": "./index.js",
+  "keywords": [
+    "git",
+    "branches",
+    "cli",
+    "git-branches"
+  ],
+  "author": "KaitoMuraok",
+  "license": "MIT",
+  "repository": "KaitoMuraok/git-branch-toolkit",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "inquirer": "^12.3.0",
+    "simple-git": "^3.27.0"
+  }
+}
