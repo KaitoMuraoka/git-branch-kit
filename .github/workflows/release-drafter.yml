@@ -43,12 +43,12 @@ jobs:
         env:
           VERSION: ${{ github.event.inputs.version }}
 
-      - name: Publish to npm
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: |
-          npm install
-          npm publish --access public
+      # - name: Publish to npm
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      #   run: |
+      #     npm install
+      #     npm publish --access public
 
       - name: Create Release Tag And Note
         env:

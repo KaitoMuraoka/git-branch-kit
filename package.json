@@ -16,7 +16,7 @@
   ],
   "author": "KaitoMuraok",
   "license": "MIT",
-  "repository": "KaitoMuraok/git-branch-kit",
+  "repository": "KaitoMuraoka/git-branch-kit",
   "publishConfig": {
     "access": "public"
   },
