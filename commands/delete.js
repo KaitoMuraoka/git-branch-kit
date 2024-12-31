@@ -11,7 +11,7 @@ async function selectBranch() {
     try {
         branchSummary = await git.branchLocal();
     } catch (error) {
-        console.error('Failed to fetch branch: 'error);
+        console.error('Failed to fetch branch: ', error);
         return;
     }
 
