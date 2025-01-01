@@ -21,6 +21,7 @@
     "access": "public"
   },
   "dependencies": {
+    "child_process": "^1.0.2",
     "commander": "^12.1.0",
     "inquirer": "^12.3.0",
     "simple-git": "^3.27.0"
