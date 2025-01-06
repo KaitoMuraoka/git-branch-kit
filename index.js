@@ -7,8 +7,8 @@ import { deleteCommand } from './commands/delete.js';
 function showVersion() {
   const versionNumner = "v1.1.0";
   program
-  .name('string-util')
-  .description('CLI to some JavaScript string utilities')
+  .name('git-branch-kit')
+  .description('A tools to simplify git branch operations')
   .version(versionNumner);
 }
 
