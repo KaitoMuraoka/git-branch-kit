@@ -12,31 +12,7 @@ npm i -g git-branch-kit
 
 ## Recommended Settings
 
-To customize the behavior of `git-branch-kit`, configure your `.gitconfig` as follows:
-
-```ini
-[git-branch-kit]
-    checkout = checkout
-    delete = delete
-```
-
-This configuration allows you to control the commands dynamically. For example:
-- If `checkout` is defined, the `checkout` command will be available.
-- If `delete` is defined, the `delete` command will be available.
-
-Run the following commands to apply the recommended settings:
-
-```sh
-git config --global git-branch-kit.checkout checkout
-git config --global git-branch-kit.delete delete
-```
-
-You can check the current settings with:
-
-```sh
-git config --get git-branch-kit.checkout
-git config --get git-branch-kit.delete
-```
+I recommend configuring the settings as follows:
 
 ## Commands
 
@@ -47,7 +23,7 @@ You can also check these commands by running `git-branch-kit -h`.
 Display the current version of `git-branch-kit`:
 
 ```sh
-git-branch-kit -v
+git-branch-kit -V
 ```
 
 or
@@ -97,4 +73,3 @@ For major changes, brilliant ideas, or any other questions, feel free to share t
 ## LICENSE
 
 Licensed under [MIT](./LICENSE).
-
